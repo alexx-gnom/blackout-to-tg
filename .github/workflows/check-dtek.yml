@@ -1,1 +1,26 @@
 
+name: Check DTEK
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show current UTC time
+        run: date -u
+
+      - name: Test access to DTEK
+        run: |
+          curl -sS -L \
+            -o response.html \
+            -w "HTTP status: %{http_code}\nResponse size: %{size_download}\n" \
+            https://www.dtek-krem.com.ua/ua/shutdowns
+
+          echo "First 20 lines of response:"
+          head -n 20 response.html
+
