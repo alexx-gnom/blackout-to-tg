@@ -1,18 +1,23 @@
 
-name: Inspect DTEK
+name: Parse DTEK Fact Schedule
 
 on:
   workflow_dispatch:
 
 jobs:
-  inspect:
+  parse:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Inspect DTEK page
+      - name: Parse actual schedule
         run: |
           python - <<'PY'
-          import urllib.request
+          import json
           import re
+          import html
+          import urllib.request
+          from datetime import datetime, timezone
+          from zoneinfo import ZoneInfo
 
           url = "https://www.dtek-krem.com.ua/ua/shutdowns"
           req = urllib.request.Request(
@@ -21,33 +26,72 @@ jobs:
           )
 
           with urllib.request.urlopen(req, timeout=30) as r:
-              html = r.read().decode("utf-8", errors="replace")
+              page = r.read().decode("utf-8", errors="replace")
 
-          print("HTML size:", len(html))
+          page = html.unescape(page)
 
-          for term in [
-              "getHomeNum",
-              "Мінеральна",
-              "Ірпінь",
-              "csrf",
-              "GPV6.1",
-              "updateFact"
-          ]:
-              print(f"\n--- {term} ---")
-              positions = [
-                  m.start() for m in re.finditer(
-                      re.escape(term), html, re.IGNORECASE
-                  )
-              ]
-              print("Occurrences:", len(positions))
-              for pos in positions[:3]:
-                  print(html[max(0, pos-250):pos+500]
-                        .replace("\n", " ")[:800])
+          marker = "DisconSchedule.fact"
+          pos = page.find(marker)
 
-          print("\n--- JavaScript files ---")
-          for src in re.findall(
-              r'<script[^>]+src=["\']([^"\']+)', html,
-              re.IGNORECASE
-          ):
-              print(src)
+          if pos < 0:
+              raise RuntimeError("DisconSchedule.fact not found")
+
+          eq = page.find("=", pos + len(marker))
+          if eq < 0:
+              raise RuntimeError("Assignment '=' not found")
+
+          start = eq + 1
+          while start < len(page) and page[start].isspace():
+              start += 1
+
+          decoder = json.JSONDecoder()
+          fact, end = decoder.raw_decode(page[start:])
+
+          print("Fact keys:", list(fact.keys()))
+          print("Update fact:",
+                re.search(r'DisconSchedule\.updateFact\s*=\s*["\']([^"\']+)',
+                          page).group(1)
+                if re.search(r'DisconSchedule\.updateFact\s*=\s*["\']([^"\']+)',
+                             page) else "not found")
+
+          data = fact.get("data", {})
+          kyiv = ZoneInfo("Europe/Kyiv")
+          today = datetime.now(kyiv).date()
+
+          print("Kyiv today:", today)
+          found_today = False
+
+          for timestamp, groups in data.items():
+              try:
+                  date = datetime.fromtimestamp(
+                      int(timestamp), timezone.utc
+                  ).astimezone(kyiv).date()
+              except (ValueError, OSError):
+                  continue
+
+              if date != today:
+                  continue
+
+              found_today = True
+              print("Date key:", timestamp, "local date:", date)
+
+              group = groups.get("GPV6.1")
+              if group is None:
+                  print("GPV6.1 not found for this date")
+              else:
+                  print("GPV6.1:")
+                  print(json.dumps(group, ensure_ascii=False,
+                                   indent=2))
+
+          if not found_today:
+              print("No fact entry found for today's Kyiv date.")
+              print("Available dates:")
+              for timestamp in data:
+                  try:
+                      date = datetime.fromtimestamp(
+                          int(timestamp), timezone.utc
+                      ).astimezone(kyiv).date()
+                      print(timestamp, date)
+                  except (ValueError, OSError):
+                      pass
           PY
