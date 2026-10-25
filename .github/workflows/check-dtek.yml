@@ -1,15 +1,23 @@
 
-name: Parse DTEK Fact Schedule
+name: Update Blackout Schedule
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
 
 jobs:
-  parse:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Parse actual schedule
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and parse DTEK schedule
         run: |
           python - <<'PY'
           import json
@@ -19,79 +27,149 @@ jobs:
           from datetime import datetime, timezone
           from zoneinfo import ZoneInfo
 
-          url = "https://www.dtek-krem.com.ua/ua/shutdowns"
+          URL = "https://www.dtek-krem.com.ua/ua/shutdowns"
+          GROUP = "GPV6.1"
+          KYIV = ZoneInfo("Europe/Kyiv")
+
           req = urllib.request.Request(
-              url,
+              URL,
               headers={"User-Agent": "Mozilla/5.0"}
           )
 
-          with urllib.request.urlopen(req, timeout=30) as r:
-              page = r.read().decode("utf-8", errors="replace")
+          with urllib.request.urlopen(req, timeout=30) as response:
+              page = response.read().decode("utf-8", errors="replace")
 
           page = html.unescape(page)
 
           marker = "DisconSchedule.fact"
           pos = page.find(marker)
-
           if pos < 0:
-              raise RuntimeError("DisconSchedule.fact not found")
+              raise RuntimeError("DTEK fact data not found")
 
           eq = page.find("=", pos + len(marker))
-          if eq < 0:
-              raise RuntimeError("Assignment '=' not found")
-
           start = eq + 1
+
           while start < len(page) and page[start].isspace():
               start += 1
 
-          decoder = json.JSONDecoder()
-          fact, end = decoder.raw_decode(page[start:])
+          fact, _ = json.JSONDecoder().raw_decode(page[start:])
 
-          print("Fact keys:", list(fact.keys()))
-          print("Update fact:",
-                re.search(r'DisconSchedule\.updateFact\s*=\s*["\']([^"\']+)',
-                          page).group(1)
-                if re.search(r'DisconSchedule\.updateFact\s*=\s*["\']([^"\']+)',
-                             page) else "not found")
+          if not fact.get("data"):
+              raise RuntimeError("DTEK fact data is empty")
 
-          data = fact.get("data", {})
-          kyiv = ZoneInfo("Europe/Kyiv")
-          today = datetime.now(kyiv).date()
+          updated = fact.get("update")
+          today = datetime.now(KYIV).date()
+          selected = None
 
-          print("Kyiv today:", today)
-          found_today = False
+          for timestamp, groups in fact["data"].items():
+              date = datetime.fromtimestamp(
+                  int(timestamp), timezone.utc
+              ).astimezone(KYIV).date()
 
-          for timestamp, groups in data.items():
-              try:
-                  date = datetime.fromtimestamp(
-                      int(timestamp), timezone.utc
-                  ).astimezone(kyiv).date()
-              except (ValueError, OSError):
-                  continue
+              if date == today and GROUP in groups:
+                  selected = groups[GROUP]
+                  break
 
-              if date != today:
-                  continue
+          if selected is None:
+              raise RuntimeError(
+                  f"No actual schedule for {today}, group {GROUP}"
+              )
 
-              found_today = True
-              print("Date key:", timestamp, "local date:", date)
+          # Validate values before publishing anything.
+          allowed = {
+              "yes", "no", "first", "second",
+              "maybe", "mfirst", "msecond"
+          }
 
-              group = groups.get("GPV6.1")
-              if group is None:
-                  print("GPV6.1 not found for this date")
-              else:
-                  print("GPV6.1:")
-                  print(json.dumps(group, ensure_ascii=False,
-                                   indent=2))
+          for hour in range(1, 25):
+              status = selected.get(str(hour))
+              if status not in allowed:
+                  raise RuntimeError(
+                      f"Invalid/missing status for hour {hour}: {status}"
+                  )
 
-          if not found_today:
-              print("No fact entry found for today's Kyiv date.")
-              print("Available dates:")
-              for timestamp in data:
-                  try:
-                      date = datetime.fromtimestamp(
-                          int(timestamp), timezone.utc
-                      ).astimezone(kyiv).date()
-                      print(timestamp, date)
-                  except (ValueError, OSError):
-                      pass
+          def intervals(statuses):
+              pieces = []
+              for hour in range(1, 25):
+                  status = selected[str(hour)]
+                  if status not in statuses:
+                      continue
+
+                  start_min = (hour - 1) * 60
+                  end_min = hour * 60
+
+                  if status in ("first", "mfirst"):
+                      end_min = start_min + 30
+                  elif status in ("second", "msecond"):
+                      start_min += 30
+
+                  pieces.append([start_min, end_min])
+
+              merged = []
+              for start_min, end_min in pieces:
+                  if merged and merged[-1][1] == start_min:
+                      merged[-1][1] = end_min
+                  else:
+                      merged.append([start_min, end_min])
+
+              def clock(minutes):
+                  if minutes == 1440:
+                      return "24:00"
+                  return f"{minutes // 60:02d}:{minutes % 60:02d}"
+
+              return [
+                  {"start": clock(a), "end": clock(b)}
+                  for a, b in merged
+              ]
+
+          definite = intervals({"no", "first", "second"})
+          possible = intervals({"maybe", "mfirst", "msecond"})
+
+          date_text = today.strftime("%d.%m.%Y")
+          message = f"Графік відключень на {date_text}\n"
+          message += f"Оновлено ДТЕК: {updated or 'час невідомий'}\n"
+
+          message += (
+              "Світла не буде: " +
+              (", ".join(
+                  f"{x['start']}–{x['end']}" for x in definite
+              ) or "підтверджених відключень немає")
+          )
+
+          if possible:
+              message += "\nМожливі відключення: " + ", ".join(
+                  f"{x['start']}–{x['end']}" for x in possible
+              )
+
+          result = {
+              "ok": True,
+              "date": today.isoformat(),
+              "group": GROUP,
+              "updated": updated,
+              "fetchedAt": datetime.now(timezone.utc).isoformat(),
+              "outages": definite,
+              "possibleOutages": possible,
+              "message": message
+          }
+
+          with open("schedule.json", "w", encoding="utf-8") as f:
+              json.dump(result, f, ensure_ascii=False, indent=2)
+              f.write("\n")
+
+          print(message)
+          print("\nJSON:")
+          print(json.dumps(result, ensure_ascii=False, indent=2))
           PY
+
+      - name: Publish schedule JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+          git add schedule.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update blackout schedule"
+            git push
+          else
+            echo "Schedule unchanged; no commit needed."
+          fi
