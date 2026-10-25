@@ -11,16 +11,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show current UTC time
-        run: date -u
-
-      - name: Test access to DTEK
+      - name: Check mirror data
         run: |
-          curl -sS -L \
-            -o response.html \
-            -w "HTTP status: %{http_code}\nResponse size: %{size_download}\n" \
-            https://www.dtek-krem.com.ua/ua/shutdowns
+          python - <<'PY'
+          import json
+          import urllib.request
 
-          echo "First 20 lines of response:"
-          head -n 20 response.html
+          url = "https://raw.githubusercontent.com/Baskerville42/outage-data-ua/main/data/kyiv-region.json"
 
+          req = urllib.request.Request(
+              url,
+              headers={"User-Agent": "BlackoutToTg/1.0"}
+          )
+
+          with urllib.request.urlopen(req, timeout=20) as response:
+              data = json.load(response)
+
+          print("Region:", data.get("regionAffiliation"))
+          print("Last fetched:", data.get("lastUpdated"))
+          print("Fetch status:", json.dumps(
+              data.get("lastUpdateStatus"),
+              ensure_ascii=False
+          ))
+
+          fact = data.get("fact", {})
+          print("Fact updated:", fact.get("updateFact") or fact.get("update"))
+
+          for section_name in ("fact", "preset"):
+              section = data.get(section_name, {})
+              print(f"\n{section_name} GPV6.1:")
+              print(json.dumps(
+                  section.get("data", {}).get("GPV6.1"),
+                  ensure_ascii=False
+              ))
+          PY
