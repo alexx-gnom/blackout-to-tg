@@ -1,0 +1,7 @@
+# DailyPulse_morning.txt ranges, inclusive, 1-based.
+# Adjust these only if you REORDER / ADD / REMOVE the morning phrases.
+general|1|245
+winter|246|275
+spring|276|305
+summer|306|335
+autumn|336|365
