@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "date": "2026-10-28",
+  "timezone": "Europe/Kyiv",
+  "morning": {
+    "time": "07:00",
+    "caption": "Доброго ранку! ☀️\n\nХай погані новини заблукають, а хороші знайдуть тебе без навігатора.\n\n🎉 Сьогодні відзначаємо:\n🎈 Міжнародний день анімації",
+    "extra_text": "",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/04.jpg",
+    "image_file": "morning/pict/autumn/04.jpg"
+  },
+  "evening": {
+    "time": "21:55",
+    "caption": "Спокійної ночі та міцного сну!",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/26.jpg",
+    "image_file": "evening/pict/26.jpg"
+  },
+  "holidays": [
+    {
+      "type": "F",
+      "name": "Міжнародний день анімації"
+    }
+  ],
+  "birthdays": []
+}
