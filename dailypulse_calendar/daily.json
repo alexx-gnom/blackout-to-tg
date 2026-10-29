@@ -1,25 +1,27 @@
 {
   "version": 1,
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nХай погані новини заблукають, а хороші знайдуть тебе без навігатора.\n\n🎉 Сьогодні відзначаємо:\n🎈 Міжнародний день анімації",
+    "caption": "Доброго ранку! ☀️\n\nНехай день не зіпсує нічого, крім твоїх очікувань щодо складності задач.\n\n🎉 Сьогодні відзначаємо:\n🌍 Міжнародний день догляду та підтримки\n\n🎂 Сьогодні день народження:\n🎁 Кум Росошанський",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/04.jpg",
-    "image_file": "morning/pict/autumn/04.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/41.jpg",
+    "image_file": "morning/pict/autumn/41.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Спокійної ночі та міцного сну!",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/26.jpg",
-    "image_file": "evening/pict/26.jpg"
+    "caption": "Пухнастих хмаринок уві сні!",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/72.jpg",
+    "image_file": "evening/pict/72.jpg"
   },
   "holidays": [
     {
-      "type": "F",
-      "name": "Міжнародний день анімації"
+      "type": "I",
+      "name": "Міжнародний день догляду та підтримки"
     }
   ],
-  "birthdays": []
+  "birthdays": [
+    "Кум Росошанський"
+  ]
 }
