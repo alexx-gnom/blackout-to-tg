@@ -1,27 +1,25 @@
 {
   "version": 1,
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю ранку без поспіху й дня без драматичних поворотів сюжету.\n\n🎉 Сьогодні відзначаємо:\n🌍 Міжнародний день догляду та підтримки\n\n🎂 Сьогодні день народження:\n🎁 Кум Росошанський",
+    "caption": "Доброго ранку! ☀️\n\nТвоя місія на сьогодні: пережити наради й не сказати вголос усе, що думаєш.\n\n🎉 Сьогодні відзначаємо:\n🎈 День кукурудзяних цукерок (Candy Corn Day)",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/41.jpg",
-    "image_file": "morning/pict/autumn/41.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/62.jpg",
+    "image_file": "morning/pict/autumn/62.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай цієї ночі сюжет буде добрим, а головний герой — виспаним.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/72.jpg",
-    "image_file": "evening/pict/72.jpg"
+    "caption": "Хай уві сні ніхто не питає, коли ти нарешті подорослішаєш.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/08.jpg",
+    "image_file": "evening/pict/08.jpg"
   },
   "holidays": [
     {
-      "type": "I",
-      "name": "Міжнародний день догляду та підтримки"
+      "type": "F",
+      "name": "День кукурудзяних цукерок (Candy Corn Day)"
     }
   ],
-  "birthdays": [
-    "Кум Росошанський"
-  ]
+  "birthdays": []
 }
