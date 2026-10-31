@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nТвоя місія на сьогодні: пережити наради й не сказати вголос усе, що думаєш.\n\n🎉 Сьогодні відзначаємо:\n🎈 День кукурудзяних цукерок (Candy Corn Day)",
+    "caption": "Доброго ранку! ☀️\n\nНехай твої плани збуваються, не питаючи додаткових документів.\n\n🎉 Сьогодні відзначаємо:\n🎈 Геловін",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/62.jpg",
-    "image_file": "morning/pict/autumn/62.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/27.jpg",
+    "image_file": "morning/pict/autumn/27.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай уві сні ніхто не питає, коли ти нарешті подорослішаєш.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/08.jpg",
-    "image_file": "evening/pict/08.jpg"
+    "caption": "Хай сьогоднішні дурниці залишаться у сьогоднішньому дні.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/36.jpg",
+    "image_file": "evening/pict/36.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "День кукурудзяних цукерок (Candy Corn Day)"
+      "name": "Геловін"
     }
   ],
   "birthdays": []
