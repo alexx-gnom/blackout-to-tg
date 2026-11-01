@@ -1,25 +1,27 @@
 {
   "version": 1,
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай твої плани збуваються, не питаючи додаткових документів.\n\n🎉 Сьогодні відзначаємо:\n🎈 Геловін",
+    "caption": "Доброго ранку! ☀️\n\nКажуть, у житті треба виходити із зони комфорту. Але спочатку нехай принесуть каву.\n\n🎉 Сьогодні відзначаємо:\n🎈 Всесвітній день вегана\n\n🎂 Сьогодні день народження:\n🎁 Кума Женя",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/27.jpg",
-    "image_file": "morning/pict/autumn/27.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/20.jpg",
+    "image_file": "morning/pict/autumn/20.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай сьогоднішні дурниці залишаться у сьогоднішньому дні.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/36.jpg",
-    "image_file": "evening/pict/36.jpg"
+    "caption": "Бажаю, щоб усі складні характери залишилися за межами сну.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/50.jpg",
+    "image_file": "evening/pict/50.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "Геловін"
+      "name": "Всесвітній день вегана"
     }
   ],
-  "birthdays": []
+  "birthdays": [
+    "Кума Женя"
+  ]
 }
