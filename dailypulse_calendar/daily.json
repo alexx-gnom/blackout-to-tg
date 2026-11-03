@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю мінімум метушні й максимум булочок із корицею.\n\n🎉 Сьогодні відзначаємо:\n🎈 День пошуку кіл",
+    "caption": "Доброго ранку! ☀️\n\nХай настрій буде настільки гарним, щоб навіть черга в магазині не змогла його зламати.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День інженерних військ України",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/39.jpg",
-    "image_file": "morning/pict/autumn/39.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/51.jpg",
+    "image_file": "morning/pict/autumn/51.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Бажаю, щоб ніч завершила день краще за будь-який фінальний титр.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/58.jpg",
-    "image_file": "evening/pict/58.jpg"
+    "caption": "Час відпочити. Світ без тебе кілька годин протримається.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/78.jpg",
+    "image_file": "evening/pict/78.jpg"
   },
   "holidays": [
     {
-      "type": "F",
-      "name": "День пошуку кіл"
+      "type": "U",
+      "name": "День інженерних військ України"
     }
   ],
   "birthdays": []
