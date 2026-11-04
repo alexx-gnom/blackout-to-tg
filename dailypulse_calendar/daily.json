@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nХай настрій буде настільки гарним, щоб навіть черга в магазині не змогла його зламати.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День інженерних військ України",
+    "caption": "Доброго ранку! ☀️\n\nПам'ятай: геніальні думки часто приходять після другого ковтка кави.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День залізничника України",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/51.jpg",
-    "image_file": "morning/pict/autumn/51.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/50.jpg",
+    "image_file": "morning/pict/autumn/50.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Час відпочити. Світ без тебе кілька годин протримається.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/78.jpg",
-    "image_file": "evening/pict/78.jpg"
+    "caption": "Хай сьогодні навіть внутрішній критик отримає вихідний.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/68.jpg",
+    "image_file": "evening/pict/68.jpg"
   },
   "holidays": [
     {
       "type": "U",
-      "name": "День інженерних військ України"
+      "name": "День залізничника України"
     }
   ],
   "birthdays": []
