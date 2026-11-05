@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nПам'ятай: геніальні думки часто приходять після другого ковтка кави.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День залізничника України",
+    "caption": "Доброго ранку! ☀️\n\nБажаю дня, у якому «ой» трапляється рідше, ніж «ура».\n\n🎉 Сьогодні відзначаємо:\n🎈 День рудих",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/50.jpg",
-    "image_file": "morning/pict/autumn/50.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/76.jpg",
+    "image_file": "morning/pict/autumn/76.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай сьогодні навіть внутрішній критик отримає вихідний.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/68.jpg",
-    "image_file": "evening/pict/68.jpg"
+    "caption": "Британські вчені шукають людину, яка лягла вчасно. Підозрюють легенду.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/70.jpg",
+    "image_file": "evening/pict/70.jpg"
   },
   "holidays": [
     {
-      "type": "U",
-      "name": "День залізничника України"
+      "type": "F",
+      "name": "День рудих"
     }
   ],
   "birthdays": []
