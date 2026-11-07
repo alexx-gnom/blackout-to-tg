@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай сьогодні ніхто не перевіряє, чи ти вмієш читати думки.\n\n🎉 Сьогодні відзначаємо:\n🎈 Міжнародний день саксофона",
+    "caption": "Доброго ранку! ☀️\n\nНехай усе важливе приходить вчасно, а дурниці запізнюються назавжди.\n\n🎉 Сьогодні відзначаємо:\n🎈 Міжнародний день Мерло",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/53.jpg",
-    "image_file": "morning/pict/autumn/53.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/78.jpg",
+    "image_file": "morning/pict/autumn/78.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Спокійної ночі! Обійми ковдру, вона не сперечатиметься.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/63.jpg",
-    "image_file": "evening/pict/63.jpg"
+    "caption": "На добраніч! Робочим думкам вхід після дев'ятої ранку.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/22.jpg",
+    "image_file": "evening/pict/22.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "Міжнародний день саксофона"
+      "name": "Міжнародний день Мерло"
     }
   ],
   "birthdays": []
