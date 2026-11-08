@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай усе важливе приходить вчасно, а дурниці запізнюються назавжди.\n\n🎉 Сьогодні відзначаємо:\n🎈 Міжнародний день Мерло",
+    "caption": "Доброго ранку! ☀️\n\nНехай у твого дня буде щасливий фінал навіть без голлівудського бюджету.\n\n🎉 Сьогодні відзначаємо:\n🎈 Всесвітній день піаніста",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/78.jpg",
-    "image_file": "morning/pict/autumn/78.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/17.jpg",
+    "image_file": "morning/pict/autumn/17.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "На добраніч! Робочим думкам вхід після дев'ятої ранку.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/22.jpg",
-    "image_file": "evening/pict/22.jpg"
+    "caption": "Бажаю заснути раніше, ніж алгоритм підкине «ще одне цікаве відео».",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/35.jpg",
+    "image_file": "evening/pict/35.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "Міжнародний день Мерло"
+      "name": "Всесвітній день піаніста"
     }
   ],
   "birthdays": []
