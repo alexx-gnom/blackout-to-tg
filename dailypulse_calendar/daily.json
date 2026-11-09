@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай у твого дня буде щасливий фінал навіть без голлівудського бюджету.\n\n🎉 Сьогодні відзначаємо:\n🎈 Всесвітній день піаніста",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб люди сьогодні читали повідомлення повністю, перш ніж питати те саме.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 Всеукраїнський день працівників культури",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/17.jpg",
-    "image_file": "morning/pict/autumn/17.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/12.jpg",
+    "image_file": "morning/pict/autumn/12.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Бажаю заснути раніше, ніж алгоритм підкине «ще одне цікаве відео».",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/35.jpg",
-    "image_file": "evening/pict/35.jpg"
+    "caption": "Бажаю снів, де всі черги рухаються миттєво.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/12.jpg",
+    "image_file": "evening/pict/12.jpg"
   },
   "holidays": [
     {
-      "type": "F",
-      "name": "Всесвітній день піаніста"
+      "type": "U",
+      "name": "Всеукраїнський день працівників культури"
     }
   ],
   "birthdays": []
