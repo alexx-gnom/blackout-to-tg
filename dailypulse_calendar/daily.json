@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб люди сьогодні читали повідомлення повністю, перш ніж питати те саме.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 Всеукраїнський день працівників культури",
+    "caption": "Доброго ранку! ☀️\n\nСьогодні дозволяється бути генієм, але тільки без понаднормових.\n\n🎉 Сьогодні відзначаємо:\n🌍 Всесвітній день науки заради миру та розвитку",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/12.jpg",
-    "image_file": "morning/pict/autumn/12.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/60.jpg",
+    "image_file": "morning/pict/autumn/60.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Бажаю снів, де всі черги рухаються миттєво.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/12.jpg",
-    "image_file": "evening/pict/12.jpg"
+    "caption": "Усе, що не встиглося, спокійно дочекається свого часу.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/67.jpg",
+    "image_file": "evening/pict/67.jpg"
   },
   "holidays": [
     {
-      "type": "U",
-      "name": "Всеукраїнський день працівників культури"
+      "type": "I",
+      "name": "Всесвітній день науки заради миру та розвитку"
     }
   ],
   "birthdays": []
