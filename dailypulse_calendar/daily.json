@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай сьогодні всі двері відчиняються у правильний бік.\n\n🎉 Сьогодні відзначаємо:\n🎈 Всесвітній день шопінгу",
+    "caption": "Доброго ранку! ☀️\n\nНехай ранкове «не хочу» тихенько перетвориться на «та чому б і ні».\n\n🎉 Сьогодні відзначаємо:\n🎈 День курячого супу",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/24.jpg",
-    "image_file": "morning/pict/autumn/24.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/11.jpg",
+    "image_file": "morning/pict/autumn/11.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай завтра буде добрим. Але нехай спершу дочекається своєї черги.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/60.jpg",
-    "image_file": "evening/pict/60.jpg"
+    "caption": "Хай турботи сьогодні не влаштовують нічну конференцію.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/20.jpg",
+    "image_file": "evening/pict/20.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "Всесвітній день шопінгу"
+      "name": "День курячого супу"
     }
   ],
   "birthdays": []
