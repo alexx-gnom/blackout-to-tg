@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай ранкове «не хочу» тихенько перетвориться на «та чому б і ні».\n\n🎉 Сьогодні відзначаємо:\n🎈 День курячого супу",
+    "caption": "Доброго ранку! ☀️\n\nЯкщо день заявить, що має для тебе сюрприз, спочатку попроси показати умови акції.\n\n🎉 Сьогодні відзначаємо:\n🎈 Всесвітній день доброти",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/11.jpg",
-    "image_file": "morning/pict/autumn/11.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/26.jpg",
+    "image_file": "morning/pict/autumn/26.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай турботи сьогодні не влаштовують нічну конференцію.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/20.jpg",
-    "image_file": "evening/pict/20.jpg"
+    "caption": "Хай усі нічні пташині концерти перенесуться на завтра.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/31.jpg",
+    "image_file": "evening/pict/31.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "День курячого супу"
+      "name": "Всесвітній день доброти"
     }
   ],
   "birthdays": []
