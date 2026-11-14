@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nЯкщо день заявить, що має для тебе сюрприз, спочатку попроси показати умови акції.\n\n🎉 Сьогодні відзначаємо:\n🎈 Всесвітній день доброти",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб наприкінці дня ти пам'ятав більше смішного, ніж термінового.\n\n🎉 Сьогодні відзначаємо:\n🎈 День маринованих огірків",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/26.jpg",
-    "image_file": "morning/pict/autumn/26.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/52.jpg",
+    "image_file": "morning/pict/autumn/52.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай усі нічні пташині концерти перенесуться на завтра.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/31.jpg",
-    "image_file": "evening/pict/31.jpg"
+    "caption": "Бажаю, щоб завтра ти подякував собі за сьогоднішній сон.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/17.jpg",
+    "image_file": "evening/pict/17.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "Всесвітній день доброти"
+      "name": "День маринованих огірків"
     }
   ],
   "birthdays": []
