@@ -1,24 +1,28 @@
 {
   "version": 1,
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб наприкінці дня ти пам'ятав більше смішного, ніж термінового.\n\n🎉 Сьогодні відзначаємо:\n🎈 День маринованих огірків",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб твоє «ще п'ять хвилин» сьогодні справді тривало п'ять хвилин.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День працівників сільського господарства\n🎈 День очищення холодильника",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/52.jpg",
-    "image_file": "morning/pict/autumn/52.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/69.jpg",
+    "image_file": "morning/pict/autumn/69.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Бажаю, щоб завтра ти подякував собі за сьогоднішній сон.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/17.jpg",
-    "image_file": "evening/pict/17.jpg"
+    "caption": "Нехай твої сни будуть добрішими за коментарі під новинами.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/10.jpg",
+    "image_file": "evening/pict/10.jpg"
   },
   "holidays": [
     {
+      "type": "U",
+      "name": "День працівників сільського господарства"
+    },
+    {
       "type": "F",
-      "name": "День маринованих огірків"
+      "name": "День очищення холодильника"
     }
   ],
   "birthdays": []
