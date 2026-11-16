@@ -1,28 +1,28 @@
 {
   "version": 1,
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб твоє «ще п'ять хвилин» сьогодні справді тривало п'ять хвилин.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День працівників сільського господарства\n🎈 День очищення холодильника",
+    "caption": "Доброго ранку! ☀️\n\nБажаю зустрічати людей, після яких не потрібна відпустка.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День працівників радіо, телебачення та зв'язку України\n🌍 Міжнародний день толерантності",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/69.jpg",
-    "image_file": "morning/pict/autumn/69.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/02.jpg",
+    "image_file": "morning/pict/autumn/02.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Нехай твої сни будуть добрішими за коментарі під новинами.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/10.jpg",
-    "image_file": "evening/pict/10.jpg"
+    "caption": "Нехай уночі всі думки чемно стоять у черзі до завтра.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/65.jpg",
+    "image_file": "evening/pict/65.jpg"
   },
   "holidays": [
     {
       "type": "U",
-      "name": "День працівників сільського господарства"
+      "name": "День працівників радіо, телебачення та зв'язку України"
     },
     {
-      "type": "F",
-      "name": "День очищення холодильника"
+      "type": "I",
+      "name": "Міжнародний день толерантності"
     }
   ],
   "birthdays": []
