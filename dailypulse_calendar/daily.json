@@ -1,28 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю зустрічати людей, після яких не потрібна відпустка.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День працівників радіо, телебачення та зв'язку України\n🌍 Міжнародний день толерантності",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб у житті сьогодні не було кнопки «прийняти всі файли cookie», особливо з чужими справами.\n\n🎉 Сьогодні відзначаємо:\n🌍 Міжнародний день студентів",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/02.jpg",
-    "image_file": "morning/pict/autumn/02.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/05.jpg",
+    "image_file": "morning/pict/autumn/05.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Нехай уночі всі думки чемно стоять у черзі до завтра.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/65.jpg",
-    "image_file": "evening/pict/65.jpg"
+    "caption": "Бажаю, щоб сни не починалися з пошуку паспорта в аеропорту.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/40.jpg",
+    "image_file": "evening/pict/40.jpg"
   },
   "holidays": [
     {
-      "type": "U",
-      "name": "День працівників радіо, телебачення та зв'язку України"
-    },
-    {
       "type": "I",
-      "name": "Міжнародний день толерантності"
+      "name": "Міжнародний день студентів"
     }
   ],
   "birthdays": []
