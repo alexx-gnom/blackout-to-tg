@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nЯкщо день обіцяє пригоди, нехай вони будуть із хепі-ендом.\n\n🎉 Сьогодні відзначаємо:\n🎈 День Міккі Мауса",
+    "caption": "Доброго ранку! ☀️\n\nРоби вигляд, що все під контролем. Іноді навіть Всесвіт на це ведеться.\n\n🎉 Сьогодні відзначаємо:\n🌍 Всесвітній день туалету",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/79.jpg",
-    "image_file": "morning/pict/autumn/79.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/40.jpg",
+    "image_file": "morning/pict/autumn/40.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Нехай жодна нічна думка не вимагатиме термінового патча.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/44.jpg",
-    "image_file": "evening/pict/44.jpg"
+    "caption": "Нехай ніч не підкидає спогадів про незручні розмови десятирічної давнини.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/57.jpg",
+    "image_file": "evening/pict/57.jpg"
   },
   "holidays": [
     {
-      "type": "F",
-      "name": "День Міккі Мауса"
+      "type": "I",
+      "name": "Всесвітній день туалету"
     }
   ],
   "birthdays": []
