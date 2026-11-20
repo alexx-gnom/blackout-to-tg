@@ -1,24 +1,28 @@
 {
   "version": 1,
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nРоби вигляд, що все під контролем. Іноді навіть Всесвіт на це ведеться.\n\n🎉 Сьогодні відзначаємо:\n🌍 Всесвітній день туалету",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб сьогодні навіть незнайомці дарували компліменти, а не поради.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День захисту дітей в Україні\n🌍 Всесвітній день дитини",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/40.jpg",
-    "image_file": "morning/pict/autumn/40.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/63.jpg",
+    "image_file": "morning/pict/autumn/63.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Нехай ніч не підкидає спогадів про незручні розмови десятирічної давнини.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/57.jpg",
-    "image_file": "evening/pict/57.jpg"
+    "caption": "Хай ніч подарує спокій без додаткових налаштувань та оновлень.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/46.jpg",
+    "image_file": "evening/pict/46.jpg"
   },
   "holidays": [
     {
+      "type": "U",
+      "name": "День захисту дітей в Україні"
+    },
+    {
       "type": "I",
-      "name": "Всесвітній день туалету"
+      "name": "Всесвітній день дитини"
     }
   ],
   "birthdays": []
