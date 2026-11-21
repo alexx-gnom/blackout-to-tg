@@ -1,28 +1,28 @@
 {
   "version": 1,
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб сьогодні навіть незнайомці дарували компліменти, а не поради.\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День захисту дітей в Україні\n🌍 Всесвітній день дитини",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб усі «не виходить» швидко перетворилися на «а, ось як!».\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День Гідності та Свободи\n🌍 Всесвітній день телебачення",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/63.jpg",
-    "image_file": "morning/pict/autumn/63.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/45.jpg",
+    "image_file": "morning/pict/autumn/45.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай ніч подарує спокій без додаткових налаштувань та оновлень.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/46.jpg",
-    "image_file": "evening/pict/46.jpg"
+    "caption": "Спи спокійно. Не кожен день має бути шедевром.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/47.jpg",
+    "image_file": "evening/pict/47.jpg"
   },
   "holidays": [
     {
       "type": "U",
-      "name": "День захисту дітей в Україні"
+      "name": "День Гідності та Свободи"
     },
     {
       "type": "I",
-      "name": "Всесвітній день дитини"
+      "name": "Всесвітній день телебачення"
     }
   ],
   "birthdays": []
