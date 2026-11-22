@@ -1,28 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб усі «не виходить» швидко перетворилися на «а, ось як!».\n\n🎉 Сьогодні відзначаємо:\n🇺🇦 День Гідності та Свободи\n🌍 Всесвітній день телебачення",
+    "caption": "Доброго ранку! ☀️\n\nБажаю, щоб у всіх навколо раптом увімкнувся режим здорового глузду.\n\n🎉 Сьогодні відзначаємо:\n🎈 День прогулянки автомобілем",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/45.jpg",
-    "image_file": "morning/pict/autumn/45.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/64.jpg",
+    "image_file": "morning/pict/autumn/64.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Спи спокійно. Не кожен день має бути шедевром.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/47.jpg",
-    "image_file": "evening/pict/47.jpg"
+    "caption": "Нехай сьогодні ковдра переможе всі тривожні думки.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/22.jpg",
+    "image_file": "evening/pict/22.jpg"
   },
   "holidays": [
     {
-      "type": "U",
-      "name": "День Гідності та Свободи"
-    },
-    {
-      "type": "I",
-      "name": "Всесвітній день телебачення"
+      "type": "F",
+      "name": "День прогулянки автомобілем"
     }
   ],
   "birthdays": []
