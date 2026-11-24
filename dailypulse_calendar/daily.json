@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай сьогодні не доведеться нікого переконувати, що очевидне — очевидне.\n\n🎉 Сьогодні відзначаємо:\n🎈 День еспресо",
+    "caption": "Доброго ранку! ☀️\n\nНехай твій внутрішній голос сьогодні говорить: «Молодець!», а не «Ой, знову».\n\n🎉 Сьогодні відзначаємо:\n🎈 День еволюції",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/78.jpg",
-    "image_file": "morning/pict/autumn/78.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/55.jpg",
+    "image_file": "morning/pict/autumn/55.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Нехай у снах працює телепортація, особливо до моря.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/70.jpg",
-    "image_file": "evening/pict/70.jpg"
+    "caption": "Засинай спокійно: постіль не потребує звіту про виконану роботу.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/49.jpg",
+    "image_file": "evening/pict/49.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "День еспресо"
+      "name": "День еволюції"
     }
   ],
   "birthdays": []
