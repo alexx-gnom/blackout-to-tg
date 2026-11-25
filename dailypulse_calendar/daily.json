@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nНехай твій внутрішній голос сьогодні говорить: «Молодець!», а не «Ой, знову».\n\n🎉 Сьогодні відзначаємо:\n🎈 День еволюції",
+    "caption": "Доброго ранку! ☀️\n\nХай день пройде гладенько, як кіт, який щойно викупався. Тобто краще.\n\n🎉 Сьогодні відзначаємо:\n🎈 День домашніх пирогів",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/55.jpg",
-    "image_file": "morning/pict/autumn/55.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/51.jpg",
+    "image_file": "morning/pict/autumn/51.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Засинай спокійно: постіль не потребує звіту про виконану роботу.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/49.jpg",
-    "image_file": "evening/pict/49.jpg"
+    "caption": "На добраніч! Сова може працювати вночі, а тобі необов'язково.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/07.jpg",
+    "image_file": "evening/pict/07.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "День еволюції"
+      "name": "День домашніх пирогів"
     }
   ],
   "birthdays": []
