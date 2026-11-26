@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nХай день пройде гладенько, як кіт, який щойно викупався. Тобто краще.\n\n🎉 Сьогодні відзначаємо:\n🎈 День домашніх пирогів",
+    "caption": "Доброго ранку! ☀️\n\nЯкщо щось не працює, спочатку перевір живлення. Це стосується й людей.\n\n🎉 Сьогодні відзначаємо:\n🌍 Всесвітній день сталого транспорту",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/51.jpg",
-    "image_file": "morning/pict/autumn/51.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/43.jpg",
+    "image_file": "morning/pict/autumn/43.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "На добраніч! Сова може працювати вночі, а тобі необов'язково.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/07.jpg",
-    "image_file": "evening/pict/07.jpg"
+    "caption": "Науковці перевірили: завтрашні проблеми сьогодні спати не заважають. Якщо не думати.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/13.jpg",
+    "image_file": "evening/pict/13.jpg"
   },
   "holidays": [
     {
-      "type": "F",
-      "name": "День домашніх пирогів"
+      "type": "I",
+      "name": "Всесвітній день сталого транспорту"
     }
   ],
   "birthdays": []
