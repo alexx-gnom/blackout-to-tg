@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nЯкщо щось не працює, спочатку перевір живлення. Це стосується й людей.\n\n🎉 Сьогодні відзначаємо:\n🌍 Всесвітній день сталого транспорту",
+    "caption": "Доброго ранку! ☀️\n\nЯкщо успіх затримується, не хвилюйся: можливо, шукає місце для паркування.\n\n🎉 Сьогодні відзначаємо:\n🎈 День булавки",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/43.jpg",
-    "image_file": "morning/pict/autumn/43.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/06.jpg",
+    "image_file": "morning/pict/autumn/06.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Науковці перевірили: завтрашні проблеми сьогодні спати не заважають. Якщо не думати.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/13.jpg",
-    "image_file": "evening/pict/13.jpg"
+    "caption": "Хай твоє ліжко буде найзручнішим місцем у Всесвіті.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/35.jpg",
+    "image_file": "evening/pict/35.jpg"
   },
   "holidays": [
     {
-      "type": "I",
-      "name": "Всесвітній день сталого транспорту"
+      "type": "F",
+      "name": "День булавки"
     }
   ],
   "birthdays": []
