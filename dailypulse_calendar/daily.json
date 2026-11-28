@@ -1,24 +1,24 @@
 {
   "version": 1,
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "timezone": "Europe/Kyiv",
   "morning": {
     "time": "07:00",
-    "caption": "Доброго ранку! ☀️\n\nЯкщо успіх затримується, не хвилюйся: можливо, шукає місце для паркування.\n\n🎉 Сьогодні відзначаємо:\n🎈 День булавки",
+    "caption": "Доброго ранку! ☀️\n\nНехай твоя інтуїція сьогодні працює краще, ніж автоматичні виправлення в телефоні.\n\n🎉 Сьогодні відзначаємо:\n🎈 День червоної планети",
     "extra_text": "",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/06.jpg",
-    "image_file": "morning/pict/autumn/06.jpg"
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/morning/pict/autumn/31.jpg",
+    "image_file": "morning/pict/autumn/31.jpg"
   },
   "evening": {
     "time": "21:55",
-    "caption": "Хай твоє ліжко буде найзручнішим місцем у Всесвіті.",
-    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/35.jpg",
-    "image_file": "evening/pict/35.jpg"
+    "caption": "Хай думки припинять змагання за звання найважливішої.",
+    "image_url": "https://raw.githubusercontent.com/alexx-gnom/blackout-to-tg/main/evening/pict/64.jpg",
+    "image_file": "evening/pict/64.jpg"
   },
   "holidays": [
     {
       "type": "F",
-      "name": "День булавки"
+      "name": "День червоної планети"
     }
   ],
   "birthdays": []
